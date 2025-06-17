@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhisperTales - Empowering Stories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fffafa;
+      color: #ffffff;
+      background-image: url(https://drsw10gc90t0z.cloudfront.net/AcuCustom/Sitename/DAM/527/reading_aesthetic_c_shutterstock.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: blur(10px);
+      background-image: linear-gradient(rgba(73, 44, 60, 0.884), rgba(37, 22, 30, 0.8)), url(https://i.pinimg.com/736x/d1/06/62/d1066202c0cfba7d093e1a028ec52282.jpg);
+      color: rgb(255, 255, 255);
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #fff4f7;
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      border-bottom: 1px solid #ffe4f2;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #24171e;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #824867cc;
+    }
+
+    .hero {
+      padding: 40px 20px;
+      margin-top: 60px;
+      text-align: center;
+      backdrop-filter: blur(60px);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      max-width: 2000px;
+      margin: 20px auto;
+      font-size: 1.1rem;
+      color: #ffffff;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #3a222e;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #693a52;
+    }
+
+    .features, .how-it-works {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+
+    .feature, .step {
+      background: rgba(153, 105, 57, 0.733);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .feature h3, .step h3 {
+      color: #1e0e00;
+      margin-bottom: 10px;
+    }
+
+    .feedback {
+      background-image: url(https://www.jcwyqc.com/zb_users/upload/2024/12/20241231040111173558887137928.jpg);
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+      text-align: center;
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    .feedback::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.0);
+      z-index: 1;
+    }
+
+    .feedback-box {
+      max-width: 800px;
+      margin: 20px auto;
+      background: rgba(153, 105, 57, 0.733);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .feedback-box p {
+      font-style: italic;
+    }
+
+    .feedback-box span {
+      display: block;
+      margin-top: 15px;
+      color: #1e0e00;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #291601;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #000000;
+      margin: 50px 0 30px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 700px) {
+      .features, .how-it-works {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .hero h2 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <h1>WhisperTales</h1>
+    <p>Where Every Whisper Becomes a Tale and Read by Hearts That Listen.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#authors">For Authors</a>
+    <a href="#readers">For Readers</a>
+    <a href="#feedback">feedback</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>No Gatekeepers. Just Great Stories.</h2>
+    <p>Embrace a new era of free expression — where underrepresented voices tell their stories and curious readers uncover hidden treasures.<br> No cost. pure passion for Storytelling.</p>
+    <a href="#authors" class="btn">Get Started</a>
+  </section>
+
+  <!-- For Authors Section -->
+  <section id="authors">
+    <h1 class="section-title">FOR AUTHORS</h1>
+    <div class="features">
+      <div class="feature">
+        <h3>📚 Publish Freely</h3>
+        <p>Your book, your way. Publish freely without fees or waiting for approval.</p>
+      </div>
+      <div class="feature">
+        <h3>📝 Author Kit</h3>
+        <p>Manage your drafts, track views, receive real-time feedback, and analyze your audience with our author Kit.</p>
+      </div>
+      <div class="feature">
+        <h3>🤝 Author Community</h3>
+        <p>Connect with passionate writers who offer reviews, encouragement, and support in a welcoming space.</p>
+      </div>
+      <div class="feature">
+        <h3>📈 Grow Your Reach</h3>
+        <p>Spread your work on social media, get highlighted in our newsletters, and increase your readership organically.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- For Readers Section -->
+  <section id="readers">
+    <h1 class="section-title">FOR READERS</h1>
+    <div class="how-it-works">
+      <div class="step">
+        <h3>🔍 Discover Tales</h3>
+        <p>Dive into diverse genres like fantasy, thriller, memoir, poetry, and more, all by fresh new authors.</p>
+      </div>
+      <div class="step">
+        <h3>📚 My Personal Library</h3>
+        <p>Assemble your personal library, save stories for later, and get alerts whenever your favorite authors release new content.</p>
+      </div>
+      <div class="step">
+        <h3>💬 Voice Your Opinion</h3>
+        <p>Interact with authors via comments, feedback, and reactions to help them grow and evolve.</p>
+      </div>
+      <div class="step">
+        <h3>🌟 Support Talents</h3>
+        <p>Support creators you love by upvoting, sharing, or donating — helping fuel their creative journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section class="feedback" id="feedback">
+    <h1 style="margin-bottom: 30px;"><b>USER'S VOICE</b></h1>
+    <div class="feedback-box">
+      <p>“WhisperTales gave me the courage to publish my first novel. I had no idea people would love my words. Thank you for this beautiful platform.”</p>
+      <span>- Ravindra Singh, Author</span>
+    </div>
+    <div class="feedback-box">
+      <p>"As a reader, it's refreshing to find raw, unfiltered stories. I come here to discover what traditional publishers overlook."</p>
+      <span>- Tara sharma, Reader</span>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>WhisperTales © 2025 | Created by Khushi Kumari</p>
+    <p><a href="https://www.linkedin.com/in/khushi-kumari-036b74221/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a></p>
+  </footer>
+</body>
+</html>
